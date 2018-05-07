@@ -18,6 +18,15 @@
     "laravel-mix": "^2.1.11"
   },
   "dependencies": {
-    "cross-env": "^5.1.4"
-  }
+    "cross-env": "^5.1.4",
+    "node-sass": "^4.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanvuthy88/worldhse-kh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khanvuthy88/worldhse-kh/issues"
+  },
+  "homepage": "https://github.com/khanvuthy88/worldhse-kh#readme"
 }

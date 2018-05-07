@@ -1,3 +1,28 @@
+
+.flexslider{
+	border: none !important;
+	.flex-direction-nav{
+		a{
+			background: #000;
+			border-radius: 50%;
+			text-align: center;
+			&:before{
+				color: #fff;
+				font-size: 26px;
+				vertical-align: middle;
+				padding-top: 2px;
+			}
+		}
+	}
+}
+.single{
+	.flexslider{
+		margin: 0px !important;
+		.flex-control-nav{
+			display: none;
+		}
+	}	
+}
 .site-content{
 	#slider{
 		margin-bottom: 20px;

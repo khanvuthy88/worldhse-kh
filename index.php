@@ -14,9 +14,17 @@
 
 get_header();
 ?>
-	<div id="slider" class="slider">
+<div class="flexslider">
+  <ul class="slides">
+    <li>
 		<img alt="Hello wrold" src="<?php echo get_template_directory_uri().'/image/slide/bg_home_image_lowres.jpg'; ?>"/>
-	</div>
+    </li>
+	<li>
+		<img alt="Hello wrold" src="<?php echo get_template_directory_uri().'/image/slide/bg_home_image_lowres.jpg'; ?>"/>
+    </li>
+  </ul>
+</div>
+
 	<div class="container clear">
 		<div id="primary" class="content-area">
 			<div id="content-add">

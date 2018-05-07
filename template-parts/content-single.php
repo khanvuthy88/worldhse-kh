@@ -9,9 +9,24 @@
 
 ?>
 
-	<?php worldhse_kh_post_thumbnail(); ?>
+	<?php
+	$images = get_field('worldhse-kh_gallery');
+	$size = 'post-thumbnail-01'; // (thumbnail, medium, large, full or custom size)
+	if( $images ): ?>
+	<div class="flexslider">
+		  <ul class="slides">
+			<?php foreach( $images as $image ): ?>
+				<li>
+					<img src="<?php echo $image['sizes']['post-thumbnail-01']; ?>" alt="<?php echo get_the_title(); ?>" />
+				</li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+	<?php endif; 
+	?>
 	<header class="entry-header">
-		<?php
+		<?php	
+		
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
