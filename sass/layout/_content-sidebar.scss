@@ -1,0 +1,175 @@
+.site-content{
+	#slider{
+		margin-bottom: 20px;
+		margin-top: -25px;
+		@media screen and (max-width: 865px){
+			margin-bottom: 1%;
+		}
+		img{
+			width:100%;
+			margin:auto;
+		}
+	}
+}
+.content-area {
+	float: left;
+	//margin: 0 (-$size__site-sidebar) 0 0;
+	width: $size__site-main;
+	margin:auto;
+	margin-right: $size__site-padding;
+	@media screen and (max-width: 865px){
+		width:100%;
+		margin-right: 0px;
+	}	
+}
+.single{
+	.content-area {
+		article{
+			width:100%;
+			padding:0px;
+			.post-thumbnail{
+				img{
+					margin-bottom: 0;
+					width: 100%;
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+.site-main,
+#relatedposts{
+	//margin: 0 $size__site-sidebar 0 0;
+	width:100%;
+	h1{
+		&.page-title{
+			margin-top: 0px;
+			border-bottom: 1px solid #d3d3d3;
+			background: #fff;
+			padding: 5px 15px;
+			font-size: 22px;
+		}
+	}
+	article{
+		width:33.33%;
+		float: left;
+		padding: 10px;
+		@media screen and (max-width: 865px){
+			width:100%;
+			padding: 0px !important;
+			padding-bottom: 10px !important;			
+		}
+		&.first{
+			padding-left: 0px;
+		}
+		&.last{
+			padding-right: 0px;
+		}
+		a{
+			&.post-thumbnail{
+				float: left;
+				max-width: 100%;
+				width: 100%;
+				height: 170px;
+				overflow: hidden;
+				@media screen and (max-width: 865px){
+					height: auto;
+				}
+				img{
+					margin-bottom: 0;
+					width: 100%;
+					float: left;
+				}
+			}
+		}
+		header{
+			&.entry-header{
+				background: white;
+				padding: 10px;
+				//margin-top: -7px;
+				h2{
+					padding-top: 10px;
+					&.entry-title{
+						margin: 0px;
+						line-height: normal;
+						font-size: 17px;
+						a{
+							text-decoration:none;
+							word-break: break-all;
+						}
+					}
+
+				}
+				.entry-meta{
+					font-size: 13px;
+					padding-top: 15px;
+					span{
+						&.posted-on{
+							padding-right: 10px;
+						}
+					}
+				}
+			}
+		}
+		.entry-content{
+			margin: 0px;
+			background: white;
+			padding: 10px;
+			p{
+				margin:0px;
+			}
+		}
+		footer{
+			&.entry-footer{
+				background: white;
+				border-top: 1px solid #e6e6e6;
+				padding: 10px;
+				span{
+					&.cat-links{
+						float:left;
+					}
+					&.comments-link{
+						float:right;
+					}
+				}
+			}
+		}
+	}	
+}
+#relatedposts{
+	h3{
+		text-transform: uppercase;
+		margin-top: 0px;
+		border-bottom: 1px solid #d3d3d3;
+	}
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: $size__site-sidebar;
+	@media screen and (max-width: 865px){
+		width:100%;
+	}
+	figure{
+		&.gallery-item{
+			margin-top: 0px;
+			img{
+				width:100%;
+			}
+		}
+	}
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+	background-color: white;
+	padding: 25px 0px;
+	.site-info{
+		text-align: center;
+	}
+}
+
+@import "no-sidebar";
